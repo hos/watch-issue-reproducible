@@ -1,0 +1,26 @@
+{
+  version: 1,
+  config: {
+    /*
+     * There can be entries here for:
+     *
+     * - `class`: for tables, composite types, views and materialized views
+     * - `attribute`: for columns/attributes (of any 'class' type)
+     * - `constraint`: for table constraints
+     * - `procedure`: for functions/procedures
+     */
+    class: {
+      "public.users": {
+        attribute: {
+          name: {
+            tags: {
+              // Uncomment this line, it will add filter on collections,
+              // comment it again, it won't remove the filter until you will restart the server.
+              // behavior: "+filterBy +orderby",
+            },
+          },
+        },
+      },
+    },
+  },
+}

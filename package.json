@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "start": "GRAPHILE_ENV=production node server-express.mjs",
-    "dev": "GRAPHILE_ENV=development node server-express.mjs",
+    "dev": "GRAPHILE_ENV=development node --watch server-express.mjs",
     "postgraphile": "postgraphile"
   },
   "dependencies": {
@@ -13,7 +13,7 @@
     "@graphile/pg-aggregates": "^0.2.0-beta.7",
     "@graphile/simplify-inflection": "^8.0.0-beta.5",
     "express": "^4.18.2",
-    "graphile": "^5.0.0-beta.32",
+    "graphile": "^5.0.0-beta.33",
     "postgraphile": "^5.0.0-beta.32",
     "postgraphile-plugin-connection-filter": "^3.0.0-beta.5",
     "ws": "^8.13.0"
@@ -27,5 +27,6 @@
   },
   "prettier": {
     "proseWrap": "always"
-  }
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }
